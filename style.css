@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration:none;
+}
+
+.container {
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+img {
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+/* Hero */
+#hero {
+    background-image:url(hero.jpg);
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+    z-index: 1;
+
+}
+
+#hero::after {
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:black;
+    opacity:.7;
+    z-index:-1;
+}
+
+#hero .hero {
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 50px;
+    justify-content: flex-start;
+}
+
+#hero h1 {
+    display:block;
+    width:fit-content;
+    font-size:5rem;
+    position:relative;
+    color:transparent;
+    margin-bottom:15px;
+    animation: h1text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+    font-weight: 600;
+}
+
+
+
+#hero h2 {
+    display:block;
+    width:fit-content;
+    font-size:4rem;
+    position:relative;
+    color:transparent;
+    animation: h2text_reveal .5s ease forwards;
+    animation-delay: 2.5s;
+}
+
+#hero .cta {
+    display:inline-block;
+    padding:10px 15px;
+    color:white;
+    border:2px solid #EF8354;
+    font-size:2rem;
+    text-transform: uppercase;
+    letter-spacing:.1rem;
+    margin-top:30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+    text-align: center;
+}
+
+#hero .cta:hover {
+    color:white;
+    background-color:#EF8354;;
+}
+
+#hero h1 span
+ {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0;
+    background-color:#EF8354;
+    animation:text_reveal_box 1s ease;
+    animation-delay:1s;
+}
+
+#hero h2 span {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0;
+    background-color:white;
+    animation:text_reveal_box 1s ease;
+    animation-delay:2s;
+}
+
+/* Header */
+#header {
+    position:fixed;
+    z-index:1000;
+    left:0;
+    top:0;
+    width:100vw;
+    height:auto;
+}
+
+#header .header {
+    min-height:8vh;
+    background-color:rgba(45, 49, 66, 0.25);
+}
+
+.header .nav-bar {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    height:100%;
+    max-width:1300px;
+    padding:0 10px;
+}
+
+.header .nav-list ul {
+    list-style: none;
+    position: absolute;
+    background-color: rgb(31,30,30)
+}
+
+/* End Header */
+
+/* End Hero*/
+
+/* Services */
+#services {
+    background-color:rgba(191,192,192,.8)
+}
+
+#services .services {
+    flex-direction:column;
+    text-align:center;
+    max-width:1500px;
+    margin:0 auto;
+    padding:100px 0;
+}
+
+#services .section-title {
+    font-size:4rem;
+    font-weight:300;
+    color:black;
+    margin-bottom:10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#services .section-title span {
+    color:#EF8354;
+    font-weight:400;
+    font-size:4.5rem;
+}
+
+#services .service-top p {
+    color:black;
+    font-size:1.8rem;
+    margin-top:5px;
+    line-height:2.5rem;
+    font-weight: 300;
+}
+#services .service-bottom {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+#services .service-item {
+    flex-basis:80%;
+    display:flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction:column;
+    padding:30px;
+    border-radius:10px;
+    background-image:url(szpachlowanie.jpg);
+    background-size:cover;
+    background-position: center;
+    margin:10px 5%;
+    position:relative;
+    z-index:1;
+    text-align:left;
+}
+
+#services .lakierowanie {
+background-image: url(lakierowanie.jpg);
+}
+
+#services .malowanie {
+    background-image: url(malowanie.jpg);
+}
+
+#services .panele {
+    background-image: url(panele.jpg);
+}
+
+
+#services .service-item::after{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-image:linear-gradient(to left,black,#2D3142,black);
+    opacity:.85;
+    z-index:-1;
+    border-radius:10px;
+}
+
+#services .service-bottom .icon {
+    height:60px;
+    width:60px;
+    margin-bottom:10px;
+}
+
+
+#services .service-item h3 {
+    font-size:2rem;
+    color:#EF8354;
+    margin-bottom:10px;
+    text-transform: uppercase;
+}
+
+#services .service-bottom p {
+    font-size:1.2rem;
+    color:white;
+    font-weight:300;
+    line-height:1.7rem;
+}
+/* End Services*/
+
+/* Keyframes */
+@keyframes text_reveal_box {
+    50% {
+        width:100%;
+        left:0;
+    }
+    100% {
+        width:0;
+        left:100%;
+    }
+}
+
+@keyframes h1text_reveal {
+    100% {
+        color:#EF8354;
+    }
+}
+
+@keyframes h2text_reveal {
+    100% {
+        color:white;
+    }
+}
+
+/* End Keyframes */
+
+/* Media Queries for smaller mobile phones */
+@media only screen and (max-width:375px) {
+    #hero h1 {
+        font-size:4rem;
+    }
+
+    #hero h2 {
+        font-size:3rem;
+    }
+
+    #hero .cta {
+        font-size:1.5rem;
+    }
+}
+
+/* End Media Queries for smaller mobile phones */
+
+/* Media Queries for tablet */
+
+@media only screen and (min-width:768px){
+    #hero h1 {
+        font-size:7rem;
+    }
+
+    #hero h2 {
+        font-size: 6rem;
+    }
+
+    #hero .cta {
+        font-size:2.5rem;
+        padding:20px 60px;
+    }
+
+    #services .section-title {
+        font-size:6rem;
+    }
+
+    #services .section-title span {
+        font-size:6.5rem;
+    }
+
+    #services .service-bottom .service-item {
+        flex-basis:45%;
+        margin:2.5%;
+    }
+
+
+}
+
+/* End Media Queries for tablet  */
+
+/* Media Queries for desktop */
+
+@media only screen and (min-width:1200px){
+
+    #services .service-top .section-title {
+        margin-bottom:40px;
+    }
+
+    #services .service-bottom {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        padding:0;
+        
+
+    }
+
+    #services .service-bottom .service-item {
+        margin:5%;
+    }
+
+    
+}
+
+
+/* End Media Queries for desktop */

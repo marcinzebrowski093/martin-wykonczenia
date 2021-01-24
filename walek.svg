@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 1024 1024">
+<metadata>
+<vectornator:setting key="DimensionsVisible" value="1"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="GridSpacing" value="36"/>
+<vectornator:setting key="Units" value="Pixels"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="New" value="1"/>
+</metadata>
+<defs/>
+<g id="Layer 1" vectornator:layerName="Layer 1">
+<path stroke="#ef8354" stroke-width="20" d="M325.075+283.357L321.19+392.396L678.598+395.556L680.262+283.357L325.075+283.357Z" fill="#ef8354" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+<g id="Layer 4" vectornator:layerName="Layer 4">
+<path stroke="#ef8354" stroke-width="20" d="M683.037+339.193L721.886+340.774L716.891+447.705L505.443+504.068L504.333+538.834" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+<g id="Layer 3" vectornator:layerName="Layer 3">
+<path stroke="#ef8354" stroke-width="20" d="M468.26+657.091C468.26+598.18+484.345+550.423+504.188+550.423C524.031+550.423+540.116+598.18+540.116+657.091C540.116+716.002+524.031+763.759+504.188+763.759C484.345+763.759+468.26+716.002+468.26+657.091Z" fill="#ef8354" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+<g id="Layer 2" vectornator:layerName="Layer 2">
+<path stroke="#ef8354" stroke-width="20" d="M95.0377+512C95.0377+282.976+281.718+97.3162+512+97.3162C742.282+97.3162+928.962+282.976+928.962+512C928.962+741.024+742.282+926.684+512+926.684C281.718+926.684+95.0377+741.024+95.0377+512Z" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+</svg>
