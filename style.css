@@ -42,7 +42,9 @@ img {
 
 #header .header {
     min-height:8vh;
-    background-color:rgba(45,49,66,0.24);
+    background-color:transparent;
+    transition: .3s ease background-color;
+    top:10px;
 }
 
 #header .nav-bar {
@@ -111,6 +113,9 @@ img {
     font-size: 6rem;
 }
 
+#header .nav-list ul li:hover a {
+    color:#EF8354;
+}
 #header .hamburger {
     height:60px;
     width:60px;
@@ -122,6 +127,18 @@ img {
     align-items:center;
     justify-content: center;
     z-index:100;
+    cursor:pointer;
+    transform:scale(0.8);
+}
+
+#header .hamburger::after {
+    position:absolute;
+    content:'';
+    height:100%;
+    width:100%;
+    border-radius: 50%;
+    border:2px solid #EF8354;
+    animation:hamburger_puls 1s ease infinite;
 }
 
 #header .hamburger .bar {
@@ -263,7 +280,7 @@ top:0;
 
 /* Services */
 #services {
-    background-color:rgba(191,192,192,.8)
+    background-color:rgba(191,192,192,.25)
 }
 
 #services .services {
@@ -371,6 +388,17 @@ background-image: url(lakierowanie.jpg);
 /* End Services*/
 
 /* Keyframes */
+@keyframes hamburger_puls {
+    0% {
+        opacity:1;
+        transform:scale(1);
+    }
+    100% {
+        opacity:0;
+        transform: scale(1.4);
+    }
+}
+
 @keyframes text_reveal_box {
     50% {
         width:100%;
@@ -450,6 +478,30 @@ background-image: url(lakierowanie.jpg);
 /* Media Queries for desktop */
 
 @media only screen and (min-width:1200px){
+
+    #header .hamburger {
+        display:none;
+    }
+
+    #header .nav-list ul {
+        position:initial;
+        display:block;
+        height:auto;
+        width:fit-content;
+        background-color: transparent;
+    }
+
+    #header .nav-list ul li {
+        display:inline-block;
+    }
+    #header .nav-list ul li a {
+        font-size:1.6rem;
+    }
+
+
+    #header .nav-list ul a:after {
+        display:none;
+    }
 
     #services .service-top .section-title {
         margin-bottom:40px;
