@@ -29,6 +29,22 @@ img {
     object-fit: cover;
 }
 
+.section-title {
+    font-size:4rem;
+    font-weight:300;
+    color:black;
+    margin-bottom:10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title span {
+    color:#EF8354;
+    font-weight:400;
+    font-size:4.5rem;
+}
+
 
 /* Header */
 #header {
@@ -44,7 +60,6 @@ img {
     min-height:8vh;
     background-color:transparent;
     transition: .3s ease background-color;
-    top:10px;
 }
 
 #header .nav-bar {
@@ -291,21 +306,7 @@ top:0;
     padding:100px 0;
 }
 
-#services .section-title {
-    font-size:4rem;
-    font-weight:300;
-    color:black;
-    margin-bottom:10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-}
 
-#services .section-title span {
-    color:#EF8354;
-    font-weight:400;
-    font-size:4.5rem;
-}
 
 #services .service-top p {
     color:black;
@@ -387,6 +388,25 @@ background-image: url(lakierowanie.jpg);
 }
 /* End Services*/
 
+/* About */
+
+#about .about {
+    flex-direction:column;
+    text-align:center;
+    max-width:1500px;
+    margin:0 auto;
+    padding:100px 0;
+}
+
+#about .about-top p {
+    color:black;
+    font-size:1.8rem;
+    margin-top:5px;
+    line-height:2.5rem;
+    font-weight: 300;
+}
+/* End About */
+
 /* Keyframes */
 @keyframes hamburger_puls {
     0% {
@@ -457,11 +477,12 @@ background-image: url(lakierowanie.jpg);
         padding:20px 60px;
     }
 
-    #services .section-title {
+    .section-title
+     {
         font-size:6rem;
     }
 
-    #services .section-title span {
+ .section-title span {
         font-size:6.5rem;
     }
 
