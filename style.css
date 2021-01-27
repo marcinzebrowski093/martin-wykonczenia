@@ -419,12 +419,12 @@ background-color:white;
     margin-top:5px;
     line-height:2.5rem;
     font-weight: 300;
+    margin-bottom:40px;
 }
 
 #about .social {
     margin:10px;
     display:grid;
-    list-style: row;
 }
 
 /* End About */
