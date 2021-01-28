@@ -433,25 +433,30 @@ background-color:white;
     transform: scale(0.4);
 }
 
-#about .facebook img::after {
-    content:attr(data-after);
-    position:absolute;
-    left:50%;
-    z-index: -1;
+#gallery .gallery {
+    min-height:100vh;
+    background-color: rgba(191,192,192,.25);
+    padding:100px 0;
+    text-align:center;
 }
 
-#header .nav-list ul a::after {
-    content:attr(data-after);
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%) scale(0);
-    color: rgba(239,131,84,0.05);
-    font-size:4rem;
-    letter-spacing: .5rem;
-    z-index: -1;
-    transition: .5s ease font-size;
+#gallery .gallery-right {
+display:flex;
+align-items:center;
+justify-content: center;
+margin:0;
 }
+
+#gallery p {
+    color:black;
+    font-size:1.8rem;
+    margin-top:5px;
+    line-height:2.5rem;
+    font-weight: 300;
+    margin-bottom:40px;
+}
+
+
 
 /* End About */
 
@@ -637,15 +642,16 @@ background-color:white;
       }
 
     #about .about {
-    background-size:55%;
+    background-size:65%;
    
 }
 
     #about .about-inner {
-        padding:100px;
+        padding:50px;
         width:55%;
         margin:0;
         float:right;
+        padding-bottom:0;
     }
 
   
@@ -653,3 +659,12 @@ background-color:white;
 
 
 /* End Media Queries for desktop */
+
+/* Media Queries for desktop over 1600px */
+@media only screen and (min-width:1600px){
+    #about .about {
+        background-size:55%;
+    }
+}
+
+/* End Media Queries for desktop over 1600px */
