@@ -403,6 +403,7 @@ align-items:center;
 justify-content: center;
 flex-direction:column;
 padding:30px;
+padding-bottom: 0;
 border:2px solid #EF8354;
 background-size:cover;
 background-position: center;
@@ -425,6 +426,31 @@ background-color:white;
 #about .social {
     margin:10px;
     display:grid;
+}
+
+#about .facebook img {
+    object-fit: none;
+    transform: scale(0.4);
+}
+
+#about .facebook img::after {
+    content:attr(data-after);
+    position:absolute;
+    left:50%;
+    z-index: -1;
+}
+
+#header .nav-list ul a::after {
+    content:attr(data-after);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    color: rgba(239,131,84,0.05);
+    font-size:4rem;
+    letter-spacing: .5rem;
+    z-index: -1;
+    transition: .5s ease font-size;
 }
 
 /* End About */
@@ -534,6 +560,7 @@ background-color:white;
         border:2px solid #EF8354;
         padding:50px;
         margin:100px;
+        padding-bottom:0;
     }
     
     #about p {
@@ -542,7 +569,24 @@ background-color:white;
         margin-top:5px;
         line-height:2.5rem;
         font-weight: 300;
+    }
 
+    #about .social {
+        display:inline-grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom:0;
+    }
+    
+    #about .fixly img {
+        object-fit: contain;
+    }
+
+
+   
+    #about p {
+        margin-bottom:0;
+    }
+   
 }
 
 /* End Media Queries for tablet  */
