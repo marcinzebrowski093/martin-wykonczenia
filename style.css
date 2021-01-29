@@ -45,6 +45,20 @@ img {
     font-size:4.5rem;
 }
 
+.cta {
+    display:inline-block;
+    padding:10px 15px;
+    color:white;
+    border:2px solid #EF8354;
+    font-size:2rem;
+    text-transform: uppercase;
+    letter-spacing:.1rem;
+    margin-top:30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+    text-align: center;
+}
+
 
 /* Header */
 #header {
@@ -433,18 +447,13 @@ background-color:white;
     transform: scale(0.4);
 }
 
+/* Gallery */
+
 #gallery .gallery {
-    min-height:100vh;
+  
     background-color: rgba(191,192,192,.25);
     padding:100px 0;
     text-align:center;
-}
-
-#gallery .gallery-right {
-display:flex;
-align-items:center;
-justify-content: center;
-margin:0;
 }
 
 #gallery p {
@@ -456,7 +465,53 @@ margin:0;
     margin-bottom:40px;
 }
 
+#gallery .gallery-left img {
+    max-width:40px;
+    justify-content: center;
+    align-items: center;
+}
 
+#gallery .gallery-right {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:100vh;
+    margin:0;
+}
+
+#gallery .gallery-right .images {
+    display:flex;
+   transform: translateX(0);
+   transition: transform 0.5s ease-in-out;
+}
+
+#gallery .gallery-right .images img {
+    width:500px;
+    height:500px;
+    object-fit: cover;
+}
+
+#gallery .gallery-right .carousel {
+    overflow:hidden;
+}
+#gallery .buttons {
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    position:relative;
+    top:-50px;
+}
+
+#gallery .btn {
+    color:#EF8354;
+    cursor:pointer;
+}
+
+#gallery .btn:focus {
+    outline: none;
+}
+
+/* End Gallery */
 
 /* End About */
 
@@ -592,6 +647,28 @@ margin:0;
         margin-bottom:0;
     }
    
+    #gallery .gallery-left {
+        display:grid;
+        align-items:center;
+        justify-content: center;
+        margin:0;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+
+
+    #gallery .gallery-left h1,
+    #gallery .gallery-left p {
+        grid-column: 1/5;
+    }    
+
+    #gallery .gallery-left img {
+        margin-top:30px;
+    }
+
+    
+ 
+
 }
 
 /* End Media Queries for tablet  */
