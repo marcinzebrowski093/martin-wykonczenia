@@ -453,7 +453,7 @@ background-color:white;
   
     background-color: rgba(191,192,192,.25);
     padding:100px 0;
-    text-align:center;
+ 
 }
 
 #gallery p {
@@ -465,6 +465,10 @@ background-color:white;
     margin-bottom:40px;
 }
 
+#gallery .gallery-left {
+    text-align:center;
+}
+
 #gallery .gallery-left img {
     max-width:40px;
     justify-content: center;
@@ -472,45 +476,77 @@ background-color:white;
 }
 
 #gallery .gallery-right {
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    height:100vh;
     margin:0;
-}
-
-#gallery .gallery-right .images {
+    padding:0;
     display:flex;
-   transform: translateX(0);
-   transition: transform 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
 }
 
-#gallery .gallery-right .images img {
-    width:500px;
+#gallery .gallery-right .slider {
+    width:800px;
     height:500px;
-    object-fit: cover;
-}
-
-#gallery .gallery-right .carousel {
+    border:2px solid #EF8354;
     overflow:hidden;
 }
-#gallery .buttons {
+
+#gallery .gallery-right .slides {
+    width:500%;
+    height:500px;
     display:flex;
-    width:100%;
-    justify-content: space-between;
-    position:relative;
-    top:-50px;
 }
 
-#gallery .btn {
-    color:#EF8354;
+#gallery .gallery-right .slides input {
+    display: none;
+}
+
+#gallery .gallery-right .slide {
+    width:20%;
+    transition:2s;
+}
+
+#gallery .gallery-right .slide img {
+    width:800px;
+    height:500px;
+}
+
+#gallery .gallery-right .navigation-manual {
+    position:absolute;
+    width:800px;
+    margin-top:-40px;
+    display:flex;
+    justify-content: center;
+}
+
+
+#gallery .gallery-right .manual-btn {
+    border:2px solid #EF8354;
+    border-radius: 10px;
+    padding:5px;
+    border-radius:10px;
     cursor:pointer;
+    transition:1s;
 }
 
-#gallery .btn:focus {
-    outline: none;
+.manual-btn:not(:last-child){
+    margin-right:20px;
 }
 
+#radio1:checked ~ .first{
+    margin-left:0;
+}
+
+#radio2:checked ~ .first{
+    margin-left:-20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left:-40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left:-60%;
+}
 /* End Gallery */
 
 /* End About */
