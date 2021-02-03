@@ -547,6 +547,42 @@ background-color:white;
 #radio4:checked ~ .first{
     margin-left:-60%;
 }
+
+#radio5:checked ~ .first{
+    margin-left:-80%;
+}
+
+#radio6:checked ~ .first{
+    margin-left:-100%;
+}
+
+#radio7:checked ~ .first{
+    margin-left:-120%;
+}
+
+#radio8:checked ~ .first{
+    margin-left:-140%;
+}
+
+#gallery .navigation-auto {
+    position:absolute;
+    display:flex;
+    width:800px;
+    justify-content: center;
+    margin-top:460px;
+}
+
+#gallery .navigation-auto div {
+    border:2px solid #EF8354;
+    padding:5px;
+    border-radius:10px;
+}
+
+#gallery .navigation-auto div:not(:last-child){
+    margin-right:40px;
+}
+
+
 /* End Gallery */
 
 /* End About */
