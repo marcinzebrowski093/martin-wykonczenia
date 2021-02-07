@@ -59,6 +59,10 @@ img {
     text-align: center;
 }
 
+.cta:hover {
+    color:white;
+    background-color:#EF8354;;
+}
 
 /* Header */
 #header {
@@ -263,24 +267,9 @@ top:0;
     animation-delay: 2.5s;
 }
 
-#hero .cta {
-    display:inline-block;
-    padding:10px 15px;
-    color:white;
-    border:2px solid #EF8354;
-    font-size:2rem;
-    text-transform: uppercase;
-    letter-spacing:.1rem;
-    margin-top:30px;
-    transition: .3s ease;
-    transition-property: background-color, color;
-    text-align: center;
-}
 
-#hero .cta:hover {
-    color:white;
-    background-color:#EF8354;;
-}
+
+
 
 #hero h1 span
  {
@@ -328,6 +317,7 @@ top:0;
     margin-top:5px;
     line-height:2.5rem;
     font-weight: 300;
+    margin: 5px 5px 0 5px;
 }
 
 #services .service-bottom {
@@ -401,13 +391,23 @@ background-image: url(lakierowanie.jpg);
     font-weight:300;
     line-height:1.7rem;
 }
+
+#services .service-fade-in {
+    margin-top:50px;
+}
+
+#services .service-fade-in a {
+color:black;
+}
+
+
 /* End Services*/
 
 /* About */
 
 #about .about {
     background-color: rgba(191,192,192,.25);
-
+    max-width:1500px;
 }
 
 #about .about-inner {
@@ -450,19 +450,20 @@ background-color:white;
 /* Gallery */
 
 #gallery .gallery {
-  
+    flex-direction: column;
     background-color: rgba(191,192,192,.25);
     padding:100px 0;
- 
+    max-width:1500px;
+    width:100%;
+    margin:0 auto;
 }
 
 #gallery p {
     color:black;
     font-size:1.8rem;
-    margin-top:5px;
     line-height:2.5rem;
     font-weight: 300;
-    margin-bottom:40px;
+    margin: 5px 5px 40px 5px;
 }
 
 #gallery .gallery-left {
@@ -531,6 +532,7 @@ background-color:white;
 .manual-btn:not(:last-child){
     margin-right:20px;
 }
+
 
 #radio1:checked ~ .first{
     margin-left:0;
@@ -660,7 +662,7 @@ background-color:white;
         font-size:3rem;
     }
 
-    #hero .cta {
+   .cta {
         font-size:1.5rem;
     }
 }
@@ -678,7 +680,7 @@ background-color:white;
         font-size: 6rem;
     }
 
-    #hero .cta {
+    .cta {
         font-size:2.5rem;
         padding:20px 60px;
     }
@@ -695,6 +697,14 @@ background-color:white;
     #services .service-bottom .service-item {
         flex-basis:45%;
         margin:2.5%;
+    }
+
+    #services .service-fade-in {
+        margin-top:100px;
+    }
+
+    #services .service-fade-in button {
+        margin-top:50px;
     }
 
     #about {
@@ -764,7 +774,33 @@ background-color:white;
         margin-top:30px;
     }
 
+    #gallery .gallery-right .slider {
+    width:600px;
+    height:400px;
+    margin-top:50px;
+}
+
+#gallery .gallery-right .slides {
+    width:500%;
+    height:400px;
+}
+
+#gallery .gallery-right .slide img {
+    width:600px;
+    height:400px;
+}
+
+#gallery .gallery-right .navigation-manual {
+    width:600px;
+    margin-top:20px;
+}
+
+#gallery .navigation-auto {
+    width: 600px;
+    margin-top:420px;
+}
     
+
  
 
 }
@@ -829,6 +865,31 @@ background-color:white;
         padding-bottom:0;
     }
 
+    #gallery .gallery-right .slider {
+        width:900px;
+        height:600px;
+        margin-top:50px;
+    }
+    
+    #gallery .gallery-right .slides {
+        width:500%;
+        height:600px;
+    }
+    
+    #gallery .gallery-right .slide img {
+        width:900px;
+        height:600px;
+    }
+    
+    #gallery .gallery-right .navigation-manual {
+        width:900px;
+        margin-top:20px;
+    }
+    
+    #gallery .navigation-auto {
+        width: 900px;
+        margin-top:620px;
+    }
   
 }
 
