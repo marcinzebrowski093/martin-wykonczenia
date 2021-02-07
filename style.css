@@ -532,10 +532,6 @@ background-color:white;
     margin-right:20px;
 }
 
-.manual-btn:hover {
-    background:#EF8354;
-}
-
 #radio1:checked ~ .first{
     margin-left:0;
 }
