@@ -447,6 +447,9 @@ background-color:white;
     transform: scale(0.4);
 }
 
+
+/* End About */
+
 /* Gallery */
 
 #gallery .gallery {
@@ -610,10 +613,48 @@ background-color:white;
     background:#EF8354;
 }
 
-
 /* End Gallery */
 
-/* End About */
+/* Contact */
+
+
+
+#contact h1 {
+    margin-bottom: 50px;
+}
+
+#contact p {
+    color:white;
+    font-size:1.8rem;
+    line-height:2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top:20px;
+}
+
+#contact .contact-bottom {
+    background:#2D3142;
+    padding:50px 80px;
+}
+
+#contact .contact-bottom-inner {
+   display:grid;
+   text-align: center;
+  border-bottom:0.1px solid slategray;
+}
+
+#contact .contact-bottom i {
+    color:#EF8354;
+}
+
+#contact .contact-bottom-inner div {
+    margin-bottom:50px;
+}
+
+
+
+/* End Contact */
+
 
 /* Keyframes */
 @keyframes hamburger_puls {
@@ -800,6 +841,14 @@ background-color:white;
     margin-top:420px;
 }
     
+#contact .contact-bottom {
+    padding-left:100px;
+    padding-right:100px;
+}
+
+#contact .contact-bottom-inner {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
  
 
@@ -890,6 +939,12 @@ background-color:white;
         width: 900px;
         margin-top:620px;
     }
+
+    #contact .contact-bottom {
+        padding-left:250px;
+        padding-right:250px;
+    }
+    
   
 }
 
@@ -901,6 +956,12 @@ background-color:white;
     #about .about {
         background-size:55%;
     }
+
+    #contact .contact-bottom {
+        padding-left:22%;
+        padding-right:22%;
+    }
+    
 }
 
 /* End Media Queries for desktop over 1600px */
