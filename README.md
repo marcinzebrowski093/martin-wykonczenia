@@ -1,4 +1,8 @@
 # martin-wykonczenia
+This is a project of one page website for a building company.<br>
+
+<edited>
+  
 https://marcinzebrowski093.github.io/martin-wykonczenia/ <br>
 This is a project which I am working on recently
 
